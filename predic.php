@@ -6,7 +6,7 @@
       
 	 move_uploaded_file($tmp,"img/".$nombre);
         
-   	$output = shell_exec("D:/python/python.exe predic.py $nombre");
+   	$output = shell_exec("D:/python/python.exe predic.py $nombre 2<&1");
 	echo $output;
      
    }
